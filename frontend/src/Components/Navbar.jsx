@@ -57,7 +57,7 @@ function Navbar() {
             <i className="fab fa-github"></i>
           </a>
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/neetu-rai-6a073b321/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-yellow-300 text-3xl"
@@ -96,8 +96,8 @@ function Navbar() {
           <Link to="/about" onClick={toggleMobileMenu} className="hover:text-yellow-300">
             About
           </Link>
-          <Link to="/contact" onClick={toggleMobileMenu} className="hover:text-yellow-300">
-            Contact
+          <Link to="/projects" onClick={toggleMobileMenu} className="hover:text-yellow-300">
+            Project
           </Link>
         </div>
       )}
