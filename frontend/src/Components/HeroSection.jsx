@@ -16,14 +16,14 @@ function HeroSection() {
             download="Neetu_Rai_react.pdf"
             className="bg-purple-900 text-white rounded-lg shadow-lg shadow-gray-500 text-[3vh] p-2 mt-4 inline-block"
           >
-             Resume
+            Resume
           </a>
         </div>
 
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5eg8-3XJ1LVRPvMOjnHG8w4IP9u1ScxXFw&s"
+            src="https://picsum.photos/200" 
             alt="Profile"
             className="rounded-full shadow-lg shadow-gray-600 w-[45vh] h-[45vh] object-cover"
           />
@@ -52,10 +52,11 @@ function HeroSection() {
           {/* PHP */}
           <div className="flex flex-col items-center bg-gray-200 p-8 rounded-lg m-4">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunGUSJUd4U2Tccp6KRamz46QsV18h5Qr9FfA9ZIpNGHhjPSac93yzjCAgsHWRjWqh5RA&usqp=CAU"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" // Direct Wikimedia link to PHP logo
               alt="PHP"
               className="w-20 h-20 mb-4"
             />
+
             <p className="font-medium">PHP</p>
           </div>
           {/* Tailwind CSS */}

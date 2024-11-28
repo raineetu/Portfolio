@@ -1,3 +1,6 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 function About() {
   return (
     <div className="bg-gray-50 font-serif">

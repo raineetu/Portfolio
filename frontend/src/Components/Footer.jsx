@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-green-700 to-green-900 text-white py-6">
+    <footer className="bg-gradient-to-b from-green-700 to-green-900 text-white py-6 font-serif">
       <div className="container mx-auto text-center md:text-left">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
           {/* Address Section */}
