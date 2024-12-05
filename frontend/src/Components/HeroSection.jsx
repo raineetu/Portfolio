@@ -1,3 +1,5 @@
+import { FaDownload } from 'react-icons/fa'; 
+
 function HeroSection() {
   return (
     <>
@@ -6,26 +8,37 @@ function HeroSection() {
         <div className="text-center lg:text-left px-8 lg:w-1/2">
           <h2 className="text-3xl font-bold">Hello, I am</h2>
           <h1 className="text-7xl font-bold text-green-700 mt-2">Neetu Rai</h1>
-          <p className="text-2xl mt-4 font-medium">
+          <p className="text-xl mt-4 font-medium">
             I specialize in creating interactive and responsive web
             applications, blending creativity and functionality to deliver
             exceptional user experiences.
           </p>
-          <a
-            href="/Neetu_Rai_react.pdf"
-            download="Neetu_Rai_react.pdf"
-            className="bg-purple-900 text-white rounded-lg shadow-lg shadow-gray-500 text-[3vh] p-2 mt-4 inline-block"
-          >
-            Resume
-          </a>
+          <section className="flex mt-6 ">
+        <a
+          href="/NeetuReactn.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-purple-900 text-white rounded-lg shadow-lg shadow-gray-500 text-[3vh] p-2 inline-block mr-4"
+        >
+          View Resume
+        </a>
+        <a
+          href="/NeetuReactn.pdf"
+          download="NeetuReactn.pdf"
+          className="bg-gray-200 text-black rounded-lg shadow-lg shadow-gray-500 text-[3vh] p-2 inline-block flex items-center space-x-2"
+        >
+          <FaDownload className="text-xl" />
+          <span>Download Resume</span>
+        </a>
+      </section>
         </div>
 
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <img
-            src="https://picsum.photos/200" 
+            src="./neetu.jpg" 
             alt="Profile"
-            className="rounded-full shadow-lg shadow-gray-600 w-[45vh] h-[45vh] object-cover"
+            className="rounded-full shadow-lg shadow-gray-600 w-[45vh] h-[50vh] object-cover"
           />
         </div>
       </section>
@@ -35,7 +48,7 @@ function HeroSection() {
         <h2 className="text-5xl font-bold text-green-700 text-center">
           My Skills
         </h2>
-        <p className="text-3xl mt-4 text-center">
+        <p className="text-2xl mt-4 text-center">
           Below are the technologies I work with to create seamless and robust
           web applications.
         </p>
@@ -52,11 +65,10 @@ function HeroSection() {
           {/* PHP */}
           <div className="flex flex-col items-center bg-gray-200 p-8 rounded-lg m-4">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" // Direct Wikimedia link to PHP logo
+              src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
               alt="PHP"
               className="w-20 h-20 mb-4"
             />
-
             <p className="font-medium">PHP</p>
           </div>
           {/* Tailwind CSS */}

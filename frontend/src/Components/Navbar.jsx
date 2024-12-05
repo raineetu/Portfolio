@@ -14,27 +14,27 @@ function Navbar() {
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text).then(() => {
       toast.success(`${text} copied to clipboard!`, {
-        position: "bottom-center",
+        position: 'bottom-center',
         autoClose: 2000,
         hideProgressBar: true,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
-        theme: "colored",
+        theme: 'colored',
       });
     });
   };
 
   return (
-    <header className="shadow-lg bg-gradient-to-b from-green-500 to-green-700 h-[15vh] flex items-center font-serif">
-      <div className="container mx-auto flex justify-between items-center text-white">
+    <header className="shadow-lg bg-gradient-to-b h-[14vh] pt-8 from-green-500 to-green-700 py-4 font-serif">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-white">
         {/* Navbar Title */}
         <div className="flex items-center space-x-4">
-          <p className="text-[3vh] font-bold">Neetu Portfolio</p>
+          <p className="text-xl md:text-2xl font-bold">Neetu Portfolio</p>
         </div>
 
         {/* Navbar Links */}
-        <nav className="hidden md:flex space-x-10 text-[3vh] font-semibold">
+        <nav className="hidden md:flex space-x-8 text-lg font-semibold">
           <Link to="/" className="hover:text-yellow-300 transition-all">
             Home
           </Link>
@@ -52,7 +52,7 @@ function Navbar() {
             href="https://github.com/raineetu"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-yellow-300 text-3xl"
+            className="text-white hover:text-yellow-300 text-xl"
           >
             <i className="fab fa-github"></i>
           </a>
@@ -60,19 +60,19 @@ function Navbar() {
             href="https://www.linkedin.com/in/neetu-rai-6a073b321/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-yellow-300 text-3xl"
+            className="text-white hover:text-yellow-300 text-xl"
           >
             <i className="fab fa-linkedin"></i>
           </a>
           <button
             onClick={() => copyToClipboard('raineetu0070@gmail.com')}
-            className="text-white hover:text-yellow-300 text-3xl focus:outline-none"
+            className="text-white hover:text-yellow-300 text-xl focus:outline-none"
           >
             <i className="fas fa-envelope"></i>
           </button>
           <button
             onClick={() => copyToClipboard('9803684424')}
-            className="text-white hover:text-yellow-300 text-3xl focus:outline-none"
+            className="text-white hover:text-yellow-300 text-xl focus:outline-none"
           >
             <i className="fas fa-phone"></i>
           </button>
