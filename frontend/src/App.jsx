@@ -1,3 +1,4 @@
+// src/App.js
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar.jsx";
 import About from "./Components/About.jsx";
@@ -8,9 +9,16 @@ import Footer from './Components/Footer.jsx';
 function App() {
   return (
     <Router>
-      {/* Navbar is constant */}
-      <Navbar />
-      
+      <Main />
+    </Router>
+  );
+}
+
+function Main() {
+  return (
+    <>
+      <Navbar /> {/* Navbar without darkMode props */}
+
       {/* Dynamic content changes based on the route */}
       <Routes>
         <Route path="/" element={<HeroSection />} />
@@ -20,7 +28,7 @@ function App() {
 
       {/* Footer is constant */}
       <Footer />
-    </Router>
+    </>
   );
 }
 
