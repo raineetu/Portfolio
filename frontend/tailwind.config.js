@@ -6,7 +6,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: '480px', // Adjust the value to fit your smallest device width
+      },
+    },
   },
   plugins: [],
 }

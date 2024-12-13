@@ -94,23 +94,24 @@ function HeroSection() {
 
           {/* Image Section */}
           <div
-            className="lg:w-1/2 flex justify-center mt-8 lg:mt-0 mr-20 "
+            className="md:w-1/2 flex justify-center mt-8 lg:mt-0 md:mr-20"
             data-aos="fade-left"
           >
             <img
               src="./neetu.jpg"
               alt="Profile"
-              className="rounded-full shadow-lg shadow-gray-600 w-[45vh] h-[50vh]  object-cover"
+              className="rounded-full shadow-lg shadow-gray-600 
+               w-[45vh] h-[45vh] 
+               md:w-[45vh] md:h-[50vh] 
+               sm:w-[60vh] sm:h-[71vh] 
+               object-cover"
             />
           </div>
         </section>
       </div>
 
       {/* Skills Section */}
-      <div
-        className="w-full my-7 font-serif"
-        
-      >
+      <div className="w-full my-7 font-serif">
         <h2 className="text-5xl font-bold text-green-700 text-center">
           My Skills
         </h2>
@@ -118,7 +119,10 @@ function HeroSection() {
           Below are the technologies I work with to create seamless and robust
           web applications.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up">
+        <div
+          className="mt-8 flex flex-wrap justify-center gap-4"
+          data-aos="fade-up"
+        >
           {skills.map((skill, index) => (
             <div
               key={index}
